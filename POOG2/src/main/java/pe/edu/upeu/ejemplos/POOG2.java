@@ -36,6 +36,9 @@ public class POOG2 {
         
         System.out.println("Hola soy Isai, acabo de unir mi rama a la rama main");
 
+        System.out.println("hola ya llegue soy adrian");
+
+
     }
 
 }
