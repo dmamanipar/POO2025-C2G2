@@ -33,8 +33,8 @@ public class POOG2 {
         personas.add(new Persona("Raul"));
 
         System.out.println("Por fin llegué: Soy Isai");
-
-
+        
+        System.out.println("Hola soy Isai, acabo de unir mi rama a la rama main");
 
     }
 
