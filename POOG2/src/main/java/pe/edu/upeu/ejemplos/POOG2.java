@@ -21,7 +21,7 @@ public class POOG2 {
     };
 
     public static void main(String[] args) {
-        System.out.println("no se que poner");
+        System.out.println("el profesor tiene paciencia");
         System.out.println("Hello World!");
 
         List<Persona> personas = new ArrayList<>();
