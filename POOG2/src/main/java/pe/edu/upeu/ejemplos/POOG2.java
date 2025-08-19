@@ -29,6 +29,8 @@ public class POOG2 {
         personas.add(new Persona("Raul"));
         personas.add(new Persona("Raul"));
 
+        System.out.println("Por fin llegué: Soy Isai");
+
 
     }
 
