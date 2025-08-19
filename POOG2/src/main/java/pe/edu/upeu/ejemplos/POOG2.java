@@ -13,6 +13,7 @@ public class POOG2 {
     public static void main(String[] args) {
         System.out.println("no se que poner");
         System.out.println("Hello World!");
+        System.out.println("este... HOLA");
     }
 
 }
