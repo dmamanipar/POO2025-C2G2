@@ -11,6 +11,8 @@ package pe.edu.upeu.ejemplos;
 public class POOG2 {
 
     public static void main(String[] args) {
+        System.out.println("no se que poner");
         System.out.println("Hello World!");
     }
+
 }
