@@ -24,12 +24,16 @@ public class POOG2 {
         System.out.println("no se que poner");
         System.out.println("Hello World!");
 
+        System.out.println("este... HOLA");
+
+
         List<Persona> personas = new ArrayList<>();
         personas.add(new Persona("Raul"));
         personas.add(new Persona("Raul"));
         personas.add(new Persona("Raul"));
 
         System.out.println("Por fin llegué: Soy Isai");
+
 
 
     }
