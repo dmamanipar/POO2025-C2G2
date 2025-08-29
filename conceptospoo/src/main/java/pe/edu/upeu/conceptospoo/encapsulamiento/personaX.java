@@ -12,6 +12,8 @@ import lombok.Setter;
  *
  * @author pc
  */
+//@Setter
+//@Getter
 @Data
 public class personaX {
     
