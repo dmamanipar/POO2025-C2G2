@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.entrada.control.PersonaController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="GESTION DE INGRESO">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="289.0" layoutY="48.0" text="Buscar Persona" />
+                  <TextField layoutX="282.0" layoutY="67.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308">
+               <children>
+                  <HBox layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="27.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="36.0" minHeight="36.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="FORMULARIO DE INGRESO" GridPane.columnSpan="2147483647">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="DNI:" GridPane.rowIndex="1" />
+                              <Label text="ID:" GridPane.rowIndex="2" />
+                              <Label text="FECHA:" GridPane.rowIndex="3" />
+                              <Label text="HORA DE INGRE:" GridPane.rowIndex="4" />
+                              <Label text="NOMBRES:" GridPane.rowIndex="5" />
+                              <Label text="APELLIDOS:" GridPane.rowIndex="6" />
+                              <Label text="HORA DE SALIDA:" GridPane.rowIndex="7" />
+                              <Label text="PERSONA:" GridPane.rowIndex="8" />
+                              <Label text="TIPO:" GridPane.rowIndex="9" />
+                              <TextField fx:id="txtDni" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtId" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtFecha" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="txtHoraingreso" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="txtNombres" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+                              <TextField fx:id="txtApellidos" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+                              <TextField fx:id="txtHorasalida" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Button mnemonicParsing="false" text="BUSCAR" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <ComboBox fx:id="cbxPersona" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+                              <ComboBox fx:id="cbxTipo" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+                              <Button mnemonicParsing="false" text="GUARDAR" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                              <Button mnemonicParsing="false" text="CANCELAR" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                           </children>
+                        </GridPane>
+                        <AnchorPane>
+                           <children>
+                              <TableView fx:id="tableView" layoutX="3.0" layoutY="28.0" />
+                           </children></AnchorPane>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+         </children></VBox>
+   </children>
+</AnchorPane>

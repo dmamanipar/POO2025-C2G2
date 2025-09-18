@@ -3,19 +3,18 @@ package pe.edu.upeu.asistencia.control;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import pe.edu.upeu.asistencia.modelo.Estudiante;
-import pe.edu.upeu.asistencia.servicio.EstudianteServicioI;
+import pe.edu.upeu.asistencia.modelo.Participante;
+import pe.edu.upeu.asistencia.servicio.ParticipanteServicioI;
 
 @Controller
 public class AsistenciaController {
 
     @Autowired
-    EstudianteServicioI estudianteServicioI;
+    ParticipanteServicioI participanteServicioI;
 
     @FXML private Label idMsg;
     @FXML TextField txtDato;
@@ -30,16 +29,16 @@ public class AsistenciaController {
 
     @FXML
     void regEstudiante(){
-        Estudiante estudiante = new Estudiante();
-        estudiante.setNombre(new SimpleStringProperty(txtDato.getText()));
-        estudiante.setEstado(new SimpleBooleanProperty(true));
+        Participante participante = new Participante();
+        participante.setNombre(new SimpleStringProperty(txtDato.getText()));
+        participante.setEstado(new SimpleBooleanProperty(true));
 
-        estudianteServicioI.saveEntidad(estudiante);
+        participanteServicioI.save(participante);
         listarEstudiantes();
     }
 
     void listarEstudiantes(){
-        for (Estudiante e: estudianteServicioI.findAllEntidades()){
+        for (Participante e: participanteServicioI.findAll()){
             System.out.println(e.getNombre());
         }
     }
